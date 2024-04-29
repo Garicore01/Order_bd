@@ -1,0 +1,31 @@
+ <body class="classBodyWithBackground">
+    <main style="padding-bottom: 1000px;">
+        <div class="main" style="padding-top: 100px;">
+            <div class="login-box">
+                <div id="container">
+                    <h2 style="padding-top: 25px;">Introduce los datos del pedido:</h2>
+                    
+                    <%= form_with(model: @pedido, url: modifypedido_path, local: true) do |form| %> 
+                        <label for="name">Nombre:</label><br>
+                            <%= form.text_field :nombre, required: true %><br><br>
+
+                        <label for="name">Fecha de recogida:</label><br>
+                        <%= form.datetime_field :fecharecogida , required: true%><br><br>
+                        
+                        <label for="description">Productos:</label><br>
+                        <%= form.text_area :productos , rows: 6%><br><br>
+
+                        <label for="description">Teléfono:</label><br>
+                        <%= form.number_field :telefono, placeholder: "123456789", pattern: "[0-9]{9}" , required: true%><br><br>
+
+                        <div class="buttons-container">
+                            <!-- <button id="cancel-btn" class="cancel-btn">Cancelar</a></button> -->
+                            <button id="cancel-btn" class="cancel-btn" onclick="event.preventDefault(); history.back();">Cancelar</button>
+                            <button id="cancel-btn" class="confirm-btn">Confirmar</a></button>
+                        </div>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>

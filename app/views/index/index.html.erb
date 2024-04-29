@@ -1,0 +1,82 @@
+
+<header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <%= link_to url_for(controller: 'index', action: 'index') do %>
+            <% end %>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mx-auto ">
+              <li class="nav-item active">
+                <%= link_to 'Home', url_for(controller: 'index', action: 'index'), class:"nav-link"%>
+              </li>
+              <li class="nav-item">
+                <%= link_to 'Añadir Pedidos', url_for(controller: 'formularionuevopedido', action: 'new'), class:"nav-link"%>
+              </li>
+            </ul>
+            <div class="user_option">
+              
+              <% if session[:usuario_id] != nil %>
+                <%= link_to 'Cerrar Sesion', url_for(controller: 'autenticacion/logout', action: 'logout'), class:"order_online"%>
+              <% else %>
+                <%= link_to 'Iniciar Sesión', url_for(controller: 'autenticacion/login', action: 'new'), class:"order_online"%>
+              <% end %>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <body>
+        <!-- carrito de compra -->
+        <div class="shopping-cart2" style="padding-left: 20px;">            
+            <%= form_with(url: index_path, method: :get, data: {turbo_frame: "index"}) do |form| %> 
+
+                    <%= form.label :query, "Buscar por nombre:", class: "block mb-2" %>
+                    <div class="flex space-x-3">
+                        <%= form.text_field :query, class: "py-3 px-4 rounded border ring-0 focus:ring-4 focus:ring-orange-100 focus:shadow-none focus:border-orange-500 focus:outline-none" %>
+                        <br><br><%= form.label :query, "Buscar por fecha:", class: "block mb-2" %>
+                        <br><%= form.date_field :fecha, class: "py-3 px-4 rounded border ring-0 focus:ring-4 focus:ring-orange-100 focus:shadow-none focus:border-orange-500 focus:outline-none", placeholder: "Fecha" %>
+                        <%= form.submit 'Buscar', class: "px-4 py-3 font-medium
+                    bg-orange-300 text-neutal-900 rounded flex items-center cursor-pointer hover:bg-orange-400 focus:ring-4 ring-0 focus:ring-orange-100" %>
+                    </div>
+                <% end %>
+
+                <br>
+            <button class="anyadir-btn">
+                  <%= link_to 'Añadir Pedido', formularionuevopedido_path(), class: 'boton-modificar' %>
+            </button>
+            <!-- ejemplo de artículo en el carrito -->
+            <% @pedidos.each do |pedido| %>
+              <div class="cart-item3" >
+                
+                <div class="item-details">
+                    <span class="item-name2" style="padding-right: 10px;"><%= pedido.nombre %></span>
+                    <span class="item-name2" style="padding-right: 10px;"><%= pedido.fecharecogida.strftime("%H:%M %d-%m-%Y") %></span>
+                    <div class="description-box"style="height: 165px; overflow: auto;width: 350px;">
+                        <span class="item-description" style="width: 250px;"><%= pedido.productos %></span>
+                    </div>
+                    <button class="order-button2">
+                        <%= link_to 'Modificar Datos', modifypedido_path(pedido.idpedido), class: 'boton-modificar' %>
+                    </button>
+                    
+                    <%= link_to index_path(idpedido: pedido.idpedido), method: :post, class: "delete-btn2", data: { confirm: '¿Estás seguro de que deseas eliminar este pedido?' } do %>
+                      Eliminar Pedido
+                    <% end %>
+                </div>
+                      
+              </div>
+            <% end %>
+            <!-- ... (resto del cuerpo de la página) ... -->
+        </div>
+
+<!-- jQery -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<!-- bootstrap js -->
+<script src="js/bootstrap.js"></script>
+    
+</body>
+    

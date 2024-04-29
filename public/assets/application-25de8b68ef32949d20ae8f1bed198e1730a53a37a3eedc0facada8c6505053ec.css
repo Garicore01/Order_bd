@@ -1,0 +1,5 @@
+@import "welcome.css.scss";
+a {
+    color: inherit;
+    text-decoration: none; /* Opcional: elimina el subrayado del enlace */
+  }

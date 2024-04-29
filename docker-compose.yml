@@ -1,0 +1,17 @@
+version: '2.2'
+services:
+  postgres_order_bd:
+    image: 'garicore01/postgres_order_bd'
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: gari
+      POSTGRES_PASSWORD: Garikoitz@01@ORDERBD
+    ports:
+      - '5530:5432'
+  order_bd:
+      image: 'garicore01/order_bd'
+      ports:
+        - '8080:3000'
+      depends_on:
+        - postgres_order_bd
+ 

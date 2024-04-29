@@ -1,0 +1,511 @@
+
+.shopping-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.shopping-cart2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.cart-item {
+  width: 90%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 5px solid #ccc; /* Borde gris */
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f9f9f9; /* Fondo gris clarito */
+}
+
+.cart-item3 {
+  width: 90%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 5px solid #ccc; /* Borde gris */
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f9f9f9; /* Fondo gris clarito */
+}
+
+.cart-item2 {
+  width: 90%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 5px solid #ccc; /* Borde gris */
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f9f9f9; /* Fondo gris clarito */
+}
+
+
+.item-image {
+  width: 180px;
+  height: 180px;
+  margin-right: 20px;
+}
+
+.item-details {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-name {
+  width:40%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.item-name2 {
+  width:20%;
+  font-size: 20px;
+}
+
+.item-precio {
+  width:5%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.item-price, .item-quantity {
+  font-size: 18px;
+  width:20%;
+}
+
+.delete-btn {
+  width: 20%;
+  background-color: #ff0000;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+  align-items: center;
+  text-align: center;
+}
+
+.delete-btn:hover {
+  background-color: #cc0000;
+}
+
+.delete-btn2 {
+  width: 15%;
+  background-color: #ff0000;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+  align-items: center;
+}
+.confirm-btn2 {
+  width: 15%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+  align-items: center;
+}
+
+
+.botonFormularioEliminar{
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  align-items: center;
+}
+.botonFormularioAceptar{
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  align-items: center;
+}
+
+.estadisticas-btn {
+  width: 15%;
+  background-color: #3498db;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+.anyadir-btn {
+  width: 90%;
+  background-color: #fdf90d;
+  color: rgb(2, 2, 2);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+  border: 2px solid #000000;
+  font-weight: bold;
+}
+
+.delete-btn3 {
+  width: 10%;
+  background-color: #ff0000;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+.delete-btn3:hover {
+  background-color: #cc0000;
+}
+
+.total-line {
+  width: 70%;
+  height: 2px; /* Puedes ajustar el grosor de la línea aquí */
+  background-color: #3b3b3b; /* Color de la línea */
+  margin: 20px auto; /* Centrar la línea horizontalmente y agregar un poco de margen */
+}
+
+.total-amount {
+  text-align: center; /* Centrar la frase */
+  font-size: 20px; /* Tamaño de la letra de la frase */
+  margin-bottom: 20px; /* Espacio debajo de la frase */
+}
+
+.order-button {
+  background-color: #4CAF50; /* Color de fondo verde */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block; /* Hace que el botón sea un bloque para centrarlo con margin auto */
+}
+
+.order-button:hover {
+  background-color: #45a049; /* Un tono de verde ligeramente más oscuro para el efecto hover */
+}
+
+.order-button2 {
+  width: 15%;
+  background-color: #4CAF50; /* Color de fondo verde */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block; /* Hace que el botón sea un bloque para centrarlo con margin auto */
+}
+
+.order-button3 {
+  width: 10%;
+  background-color: #4CAF50; /* Color de fondo verde */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block; /* Hace que el botón sea un bloque para centrarlo con margin auto */
+}
+
+.order-button2:hover {
+  background-color: #45a049; /* Un tono de verde ligeramente más oscuro para el efecto hover */
+}
+
+.order-button3:hover {
+  background-color: #45a049; /* Un tono de verde ligeramente más oscuro para el efecto hover */
+}
+
+.description-box {
+  border: 3px solid #676767; /* Puedes ajustar el estilo del borde según tus preferencias */
+  padding: 5px;
+  padding-left: 5px;
+  margin-left: 20px;
+  margin-top: 5px; /* Ajusta el margen según tus preferencias */
+}
+
+.estadistica-box {
+border: 3px solid #676767; /* Puedes ajustar el estilo del borde según tus preferencias */
+padding: 5px;
+margin-left: 20px;
+margin-top: 5px; /* Ajusta el margen según tus preferencias */
+width: 20%;
+}
+
+.description-box {
+width: 25%;
+}
+
+.item-description {
+height: 90%;
+width: 90%;
+display: block;
+}
+
+.item-estadistica {
+height: 90%;
+width: 90%;
+display: block;
+}
+
+/* Estilos para el recuadro bonito de entrada de nombre */
+.name-input-container {
+border: 2px solid #ccc;
+border-radius: 5px;
+padding: 10px;
+margin-bottom: 20px;
+width: 800px;
+}
+
+.name-input-container input {
+width: 100%;
+padding: 8px;
+box-sizing: border-box;
+}
+
+/* Estilos para el recuadro bonito de entrada de nombre */
+.name-input-container {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 800px;
+  }
+  
+  .name-input-container input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  }
+  
+  /* Estilos de los recuadros de imagen */
+  .image-box {
+    width: 80%;
+    height: 20%;
+    border: 3px solid #3498db;
+    margin: 5px;
+    overflow: hidden;
+    border-radius: 10px; /* Añadido para bordes redondeados */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Añadido para bordes redondeados */
+  }
+  
+  .image-container {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+  }
+  
+  .image-container h3 {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+@media (max-width: 767px) {
+  .image-container {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.name-input-container {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 250px;
+}
+
+.shopping-cart {
+  width: 100%;
+  padding: 20px;
+  margin: 10px;
+}
+
+.shopping-cart2 {
+  width: 100%;
+  padding: 20px;
+  margin: 10px;
+}
+
+.cart-item {
+  width: auto; /* Cambia el ancho al 100% para que ocupe todo el ancho disponible */
+  height: auto;
+}
+
+.cart-item2 {
+  width: auto; /* Cambia el ancho al 100% para que ocupe todo el ancho disponible */
+  height: auto;
+  flex-direction: column;
+}
+
+.cart-item3 {
+  width: auto; /* Cambia el ancho al 100% para que ocupe todo el ancho disponible */
+  height: auto;
+  flex-direction: column;
+}
+
+.item-image {
+  width: 100px; /* Ajusta el tamaño de la imagen según tus preferencias */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+  margin-right: 0; /* Elimina el margen derecho */
+  margin-bottom: 10px; /* Añade un poco de espacio entre la imagen y los detalles */
+}
+
+
+.item-details {
+  flex-direction: column; /* Coloca los detalles uno encima del otro */
+  align-items: flex-start; /* Alinea los detalles a la izquierda */
+}
+
+.total-line,
+.total-amount,
+.order-button {
+  width: 90%; /* Cambia el ancho al 80% para ocupar todo el ancho disponible */
+  margin: 10px 0;
+  margin-left: 10px;
+  margin-right:10px;
+}
+
+.order-button {
+  margin-top: 10px; /* Ajusta el margen superior según tus preferencias */
+
+}
+
+.item-name {
+  width:auto;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.item-name2 {
+  width:auto;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.item-price, .item-quantity {
+  font-size: 18px;
+  width:auto;
+  padding-left: 10px;
+}
+
+.delete-btn {
+  width: auto;
+  background-color: #ff0000;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+.delete-btn2 {
+  width: auto;
+  background-color: #ff0000;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+.estadisticas-btn {
+  width: auto;
+  background-color: #3498db;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+.delete-btn3 {
+  width: auto;
+  background-color: #ff0000;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+.order-button2 {
+  width: auto;
+  background-color: #4CAF50; /* Color de fondo verde */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+.order-button3 {
+  width: auto;
+  background-color: #4CAF50; /* Color de fondo verde */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+.description-box {
+  width: 90%;
+  margin-left: 5px;
+}
+
+.estadistica-box {
+  width: 90%;
+  margin-left: 5px;
+
+}
+}

@@ -1,0 +1,284 @@
+/* Estilos generales */
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.classBodyWithBackground {
+    background-image: url(/images/login_background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+}
+
+header .logo img {
+    width: 80px; /* Reduzco el tamaño del logo para dispositivos más pequeños */
+    height: 80px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas más pequeñas */
+    justify-content: center;
+}
+
+header nav li {
+    margin: 5px;
+}
+
+main {
+    background-image: url(/../images/fondoHomeee.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 100%; /* Hacer que la caja sea más ancha en pantallas más grandes */
+    max-width: 400px; /* Limitar el ancho máximo para evitar que sea demasiado grande en pantallas grandes */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box input,
+.login-box button {
+    width: 100%; /* Hacer que los campos de entrada y botones ocupen todo el ancho disponible */
+    margin-bottom: 10px; /* Agregar espacio entre los elementos */
+}
+
+.cancel-btn {
+    width: 20%;
+    background-color: #ff0000;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #cc0000;
+  }
+
+  .confirm-btn {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block; /* Hace que el botón sea un bloque para centrarlo con margin auto */
+  }
+  
+  .confirm-btn:hover {
+    background-color: #45a049; /* Un tono de verde ligeramente más oscuro para el efecto hover */
+  }
+
+  .botones-container {
+    display: flex;
+}
+
+.boton {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    border: 2px solid #2980b9;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #2980b9;
+}
+
+.boton2 {
+    padding: 5px 20px;
+    margin: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    border: 2px solid #2980b9;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton2:hover {
+    background-color: #2980b9;
+}
+
+.anyadir {
+    background-color: #4CAF50; /* Color de fondo verde */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block; /* Hace que el botón sea un bloque para centrarlo con margin auto */
+}
+
+.anyadir:hover {
+    background-color: #45a049; /* Un tono de verde ligeramente más oscuro para el efecto hover */
+}
+
+.nombrePlato{
+    height: 50px;
+    font-size: 2rem;
+}
+
+.descripcionPlato{
+    height: 500px;
+    font-size: 1.5rem;
+}
+/* Estilos de la caja con scroll */
+.scroll-box {
+    width: 1200px;
+    height: 500px;
+    margin-top: 25px;
+    position: relative;
+    overflow-y: scroll;
+    border: 5px solid #3498db;
+    padding: 10px;
+    border-radius: 10px;
+}
+  
+/* Estilos de la línea con nombre y fecha */
+.info-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #3498db;
+    margin-bottom: 10px;
+}
+
+.end-line {
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #3498db;
+    margin-bottom: 10px;
+}
+
+.name-date {
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    line-height: 1.8;
+    font-family: 'Times New Roman', serif;
+}
+  
+/* Estilos del comentario */
+.comment {
+    margin: 20px;
+    font-size: 1.3rem;
+    font-family: 'Times New Roman', serif;
+}
+
+
+/* Agregar media query para pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+    header {
+        height: auto; /* Permitir que la altura del encabezado se ajuste automáticamente */
+    }
+
+    header .logo img {
+        width: 60px; /* Reducir aún más el tamaño del logo para pantallas más pequeñas */
+        height: 60px;
+    }
+
+    header nav {
+        height: auto;
+    }
+
+    header nav ul {
+        flex-direction: column; /* Cambiar a diseño de columna en pantallas más pequeñas */
+        text-align: center; /* Centrar los elementos en pantallas más pequeñas */
+    }
+
+    header nav li {
+        margin: 5px 0; /* Agregar espacio vertical entre los elementos en pantallas más pequeñas */
+    }
+
+    .login-box {
+        width: 95%; /* Hacer que la caja sea más ancha en pantallas más grandes */
+        max-width: 400px; /* Limitar el ancho máximo para evitar que sea demasiado grande en pantallas grandes */
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .scroll-box {
+        flex-direction: column-reverse; /* Invierte la dirección para poner la img-box encima */
+        height: 20%; 
+        width: 90%;
+    }
+    
+    .anyadir {
+        background-color: #4CAF50; /* Color de fondo verde */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 10px auto;
+        display: block; /* Hace que el botón sea un bloque para centrarlo con margin auto */
+    }
+}

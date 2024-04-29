@@ -1,0 +1,78 @@
+
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>OrderBD</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="Aplicación de gestión de pedidos." />
+    <meta name="author" content="Gari Arellano" />
+    <link rel="shortcut icon" href="images/favicon.png" type="">
+    <link rel="../assets/stylesheets/stylesheet" type="text/css" href="principal.css" /> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700" rel="stylesheet">
+
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'style', :media => "all" %>
+    <%= stylesheet_link_tag 'bootstrap', :media => "all" %>
+
+    <%= stylesheet_link_tag 'responsive', :media => "all" %>
+    <%= stylesheet_link_tag 'inicioSesion', :media => "all" %>
+    <%= stylesheet_link_tag 'principal', :media => "all" %>
+    <%= stylesheet_link_tag 'application', :media => "all" %>
+    <%= stylesheet_link_tag 'styleCarrito', :media => "all" %>
+    <%= stylesheet_link_tag 'error404', :media => "all" %>
+    <%= javascript_include_tag 'application' %>
+
+
+    
+
+
+
+
+    
+    <%= javascript_tag 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'%>
+    <%= javascript_tag 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'%>
+    <%= javascript_tag 'https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js'%>
+    <%= javascript_tag 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap'%>
+
+
+<% unless flash.empty? %>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        alert("<%= j flash[:notice] %>");
+      });
+  </script>
+<% end %>   
+
+        
+  </head>
+
+    <body>
+      <% alert %>
+      <%= yield %>
+    </body>
+
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- isotope js -->
+  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- custom js -->
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+    </html>
